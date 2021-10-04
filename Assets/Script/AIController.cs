@@ -54,7 +54,7 @@ public class AIController : MonoBehaviour {
     private float noVisionTime;
 
     [Header("State: Attacar")]
-    public static float damageEnemy = 10;
+    public static float damageEnemy = 20f;
     private bool podeAtacar;
     
 
@@ -315,7 +315,7 @@ public class AIController : MonoBehaviour {
         if(podeAtacar == true)
         {
             StartCoroutine("TempoDeAtaque");
-            Player.GetComponent<LifePlayer>().Life -= damageEnemy;
+            Player.GetComponent<LifePlayer>().currentLife -= damageEnemy;
         }
     }
     IEnumerator TempoDeAtaque()

@@ -25,33 +25,50 @@ public class LifePlayer : MonoBehaviour {
 
     }
     
+   
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Damage();
+        }
+        else
+        {
+            trapDamage();
+        }
+      
+    }
+    
     public void Damage()
     {
-
-        currentLife =  currentLife - AIController.damageEnemy;
-        //AIController.damageEnemy = AIController.damageEnemy - currentLife;
+        
+        currentLife = currentLife - AIController.damageEnemy;
         healthBar.SetHealth(currentLife);
         //currentLife = Mathf.FloorToInt(Time.deltaTime);
         
+    }
 
+    public void trapDamage()
+    {
+
+        currentLife = currentLife - Trap.trapDamage;
+        healthBar.SetHealth(currentLife);
+        //currentLife = Mathf.FloorToInt(Time.deltaTime);
 
     }
 
-    
-    
 
-   
+
+
 
     void Update()
     {
 
-
-        Damage();
-
-
-        if (Life <= 0)
+       
+        if (currentLife <= 0)
         {
-            Life = 0;
+            currentLife = 0;
 
             Death();
         }

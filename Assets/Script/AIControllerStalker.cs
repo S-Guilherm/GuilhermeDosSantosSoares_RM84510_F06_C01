@@ -42,7 +42,7 @@ public class AIControllerStalker : MonoBehaviour
     private float noVisionTime;
 
     [Header("State: Attack")]
-    private int damageEnemy = 100;
+    public static float damageEnemy = 100f;
     private bool podeAtacar;
 
 
@@ -168,7 +168,7 @@ public class AIControllerStalker : MonoBehaviour
         if (podeAtacar == true)
         {
             StartCoroutine("TempoDeAtaque");
-            Player.GetComponent<LifePlayer>().Life -= damageEnemy;
+            Player.GetComponent<LifePlayer>().currentLife -= damageEnemy;
         }
     }
     IEnumerator TempoDeAtaque()
