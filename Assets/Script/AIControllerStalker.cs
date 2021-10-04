@@ -42,7 +42,7 @@ public class AIControllerStalker : MonoBehaviour
     private float noVisionTime;
 
     [Header("State: Attack")]
-    public static float damageEnemy = 100f;
+    private int damageEnemy = 100;
     private bool podeAtacar;
 
 

@@ -303,6 +303,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4469668526176138212, guid: 224f4d3998fa9fd47a007196f6638128, type: 3}
   m_PrefabInstance: {fileID: 1419336430}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &452130494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3279872093591305472, guid: 09a2b5cb6b4a09144be8633d02db7aa8, type: 3}
+  m_PrefabInstance: {fileID: 2397352729959906960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &452130498
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452130494}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.37
+  m_Height: 1.69
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!1 &541098148
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +603,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1515137774, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: wayPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 129254320}
+    - target: {fileID: 1515137774, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: wayPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1418528275}
+    - target: {fileID: 1515137774, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: wayPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 672922032}
+    - target: {fileID: 1515137774, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: wayPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1706179728}
+    - target: {fileID: 1515137775, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 543450651894159658}
     - target: {fileID: 5946571242345971360, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -628,30 +667,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6128500193886797913, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 543450651894159658}
     - target: {fileID: 6128500193886797917, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: m_Radius
-      value: 0.28
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6128500193886797926, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: wayPoints.Array.data[0]
+    - target: {fileID: 6128500193886797917, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1418528275}
-    - target: {fileID: 6128500193886797926, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: wayPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 129254320}
-    - target: {fileID: 6128500193886797926, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: wayPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 1706179728}
-    - target: {fileID: 6128500193886797926, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
-      propertyPath: wayPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 672922032}
+      objectReference: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+    - target: {fileID: 6128500193886797917, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6471012568745239578, guid: 03d416e27a4336241b4e89d8abe36ebe, type: 3}
       propertyPath: m_Name
       value: IABoot
@@ -1381,10 +1408,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2397352729697892889, guid: 09a2b5cb6b4a09144be8633d02db7aa8, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 541098151}
     - target: {fileID: 2796633003378976698, guid: 09a2b5cb6b4a09144be8633d02db7aa8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1433,6 +1456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6253753169625724801, guid: 09a2b5cb6b4a09144be8633d02db7aa8, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 541098151}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09a2b5cb6b4a09144be8633d02db7aa8, type: 3}
 --- !u!1001 &3330992356853904814
@@ -1499,13 +1526,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4913639353576844804, guid: b4738bb82723fed468cdcf681534207c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 543450651894159658}
     - target: {fileID: 7042945091845964094, guid: b4738bb82723fed468cdcf681534207c, type: 3}
       propertyPath: m_Name
       value: IAStalker
-      objectReference: {fileID: 0}
-    - target: {fileID: 7042945091845964094, guid: b4738bb82723fed468cdcf681534207c, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7707419909470231428, guid: b4738bb82723fed468cdcf681534207c, type: 3}
       propertyPath: m_RootOrder
@@ -1550,14 +1577,6 @@ PrefabInstance:
     - target: {fileID: 7707419909470231428, guid: b4738bb82723fed468cdcf681534207c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889454352824001894, guid: b4738bb82723fed468cdcf681534207c, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 543450651894159658}
-    - target: {fileID: 7889454352824001898, guid: b4738bb82723fed468cdcf681534207c, type: 3}
-      propertyPath: m_Radius
-      value: 0.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4738bb82723fed468cdcf681534207c, type: 3}

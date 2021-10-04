@@ -82,7 +82,7 @@ public class AIController : MonoBehaviour {
     {
         CheckStates();
 
-        if (Vector3.Distance(transform.position, Player.transform.position) < 1.5f)
+        if (Vector3.Distance(transform.position, Player.transform.position) < 1f)
         {
             Attacar();
         }
