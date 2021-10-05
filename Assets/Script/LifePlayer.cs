@@ -12,34 +12,28 @@ public class LifePlayer : MonoBehaviour {
     public float currentLife;
     private GameObject playerLife;
     private LifePlayer lifePlayer;
-
+   
 
 
     public HealthBar healthBar;
-    
-    
-	
+
+
+
     void Start()
     {
        transform.tag = "Player";
 
         currentLife = Life;
         healthBar.SetMaxhealth(Life);
-
-
-
+           
     }
-    
+
+    #region atualização vida
     public void Damage()
     {
-        
         currentLife = currentLife - AIController.damageEnemy;
         //AIController.damageEnemy = AIController.damageEnemy - currentLife;
         healthBar.SetHealth(currentLife);
-        //currentLife = Mathf.FloorToInt(Time.deltaTime);
-        
-
-
     }
 
     public void danoArmadilha()
@@ -48,21 +42,25 @@ public class LifePlayer : MonoBehaviour {
         healthBar.SetHealth(currentLife);
     }
 
+    #endregion
+
+    
+
     private void OnTriggerEnter(Collider other)
     {
+       
         if (other.CompareTag("Enemy"))
         {
-           
             Damage();
+            print("esbarrou enemy");
         }
         else
         {
             danoArmadilha();
+            print("pisou trap");
         }
+        
     }
-
-    
-
 
 
     void Update()
@@ -76,10 +74,14 @@ public class LifePlayer : MonoBehaviour {
 
             Death();
         }
-               
+
     }
 
-    
+
+   
+
+
+
 
     void Death()
     {
