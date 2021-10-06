@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.72
+    m_Value: 0.64
     min: 0
   intensity:
     m_OverrideState: 1
@@ -68,13 +68,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.8502033, y: 0.86302143, z: 1, w: -0.19067797}
+    m_Value: {x: 0.8803095, y: 0.91237706, z: 1, w: -0.19067797}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0.9860534, y: 0.9634197, z: 1, w: -0.021186441}
+    m_Value: {x: 0.9496417, y: 0.94192004, z: 1, w: -0.021186441}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.9227345, y: 0.9359161, z: 1, w: 0}
+    m_Value: {x: 0.9438976, y: 0.9487897, z: 1, w: 0}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0
@@ -145,11 +145,11 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 30
     min: 0
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 30
+    m_Value: 40
     min: 0
   gaussianMaxRadius:
     m_OverrideState: 1
@@ -158,7 +158,7 @@ MonoBehaviour:
     max: 1.5
   highQualitySampling:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   focusDistance:
     m_OverrideState: 1
     m_Value: 10
@@ -204,11 +204,11 @@ MonoBehaviour:
   m_AdvancedMode: 0
   temperature:
     m_OverrideState: 1
-    m_Value: -4
+    m_Value: 11
     min: -100
     max: 100
   tint:
     m_OverrideState: 1
-    m_Value: -14
+    m_Value: -9
     min: -100
     max: 100
