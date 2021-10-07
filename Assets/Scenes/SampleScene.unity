@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: d1fdb8e44b28da34d9e922cca0bc740e, type: 2}
@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 256
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -1714,6 +1714,7 @@ GameObject:
   - component: {fileID: 181377224}
   - component: {fileID: 181377223}
   - component: {fileID: 181377222}
+  - component: {fileID: 181377227}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1852,6 +1853,18 @@ Transform:
   m_Father: {fileID: 920538043}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181377227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181377221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b07ef42f2670b9b4ead3d768928c4652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &184012888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,31 +2211,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 275.32
+      value: 275.266
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 220.85
+      value: 220.866
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.58902156
+      value: 0.5991891
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.47109467
+      value: -0.4640927
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.36677992
+      value: -0.37560043
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.54460627
+      value: 0.53339934
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2234,7 +2247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 92.15
+      value: 89.988
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
@@ -3667,6 +3680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008763782255982, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Range
       value: 1.58
@@ -3675,6 +3692,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tocha (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3730,6 +3755,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6486008764857091331, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3920,10 +3949,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3972,6 +4013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.774
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
 --- !u!1001 &433465019
@@ -3981,10 +4026,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4032,6 +4089,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.774
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -4872,19 +4933,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7118162
+      value: 0.7061801
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0012095126
+      value: 0.00111939
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.011270166
+      value: -0.011279474
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7022743
+      value: 0.7079416
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4896,7 +4957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.22
+      value: 90.136
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
@@ -4907,10 +4968,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4966,6 +5039,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 17.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6486008764857091331, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5736,19 +5813,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5779888
+      value: 0.5726268
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.43929633
+      value: 0.4433258
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.41586342
+      value: 0.41156518
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.54772735
+      value: 0.5533308
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5760,7 +5837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.195
+      value: 90.311
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
@@ -5789,7 +5866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5797,19 +5874,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6746937
+      value: 0.67228377
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.21163282
+      value: -0.21238604
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.21163282
+      value: -0.21087685
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6746937
+      value: 0.67709506
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5821,7 +5898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831746706988681303, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 90.409
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f0d3d94972cf247be5aeead4e7aa70, type: 3}
@@ -6348,7 +6425,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &677538962
 Transform:
@@ -7439,10 +7516,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -7494,6 +7583,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -7592,10 +7685,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha(2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7643,6 +7748,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 19.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -8129,10 +8238,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -8180,6 +8301,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.774
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -8497,10 +8622,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -8552,6 +8689,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -10202,6 +10343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008763782255982, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Range
       value: 1.62
@@ -10210,6 +10355,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tocha (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10266,6 +10419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 22.244
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764857091333, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.3
@@ -10283,10 +10440,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha(16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -10338,6 +10507,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -13814,6 +13987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008763782255982, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Range
       value: 1.4
@@ -13822,6 +13999,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tocha(7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13877,6 +14062,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30.392
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6486008764857091333, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: ShapeModule.radius.value
@@ -13950,7 +14139,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575250438}
-  m_LocalRotation: {x: 0.05239695, y: 0.035167545, z: -0.0018463552, w: 0.9980052}
+  m_LocalRotation: {x: 0.052396953, y: 0.035167545, z: -0.0018463553, w: 0.9980052}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15044,10 +15233,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha(12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -15095,6 +15296,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 12.882
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -15236,10 +15441,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -15287,6 +15504,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.774
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -15885,8 +16106,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.5
+  m_Color: {r: 0.4227483, g: 0.7005205, b: 0.9433962, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15925,7 +16146,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -15943,13 +16164,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804443928}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -260.5895, y: 0.3392923, z: -126.015205}
+  m_LocalRotation: {x: 0.88693273, y: 0.23465927, z: 0.24661902, w: 0.31219298}
+  m_LocalPosition: {x: 11876, y: -8160, z: -7229}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 662717704}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 25.979, y: -220.514, z: -219.371}
 --- !u!4 &1810876339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -16091,10 +16312,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha(14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -16138,6 +16371,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 35.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -16544,6 +16781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008763782255982, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Range
       value: 1.48
@@ -16552,6 +16793,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tocha (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16607,6 +16856,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6486008764857091333, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: ShapeModule.radius.value
@@ -17396,10 +17649,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -17443,6 +17708,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
@@ -18804,10 +19073,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 677538962}
     m_Modifications:
+    - target: {fileID: 6486008763782255980, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_Name
       value: tocha
       objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600463, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764577600465, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18855,6 +19136,10 @@ PrefabInstance:
     - target: {fileID: 6486008764577600467, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.774
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486008764857091330, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8639b93c1c0bc84bbab543ff90ad590, type: 3}
