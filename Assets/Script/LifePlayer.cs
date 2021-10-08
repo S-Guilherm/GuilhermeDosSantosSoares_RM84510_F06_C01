@@ -42,6 +42,12 @@ public class LifePlayer : MonoBehaviour {
         healthBar.SetHealth(currentLife);
     }
 
+    public void curaVida()
+    {
+        currentLife = currentLife +  LifeScript.cura;
+        healthBar.SetHealth(currentLife);
+    }
+
     #endregion
 
     
@@ -54,10 +60,15 @@ public class LifePlayer : MonoBehaviour {
             Damage();
             print("esbarrou enemy");
         }
-        else
+         if(other.CompareTag("Trap"))
         {
             danoArmadilha();
             print("pisou trap");
+        }
+        else if (other.CompareTag("life"))
+        {
+            curaVida();
+            print("pegou vida");
         }
         
     }
