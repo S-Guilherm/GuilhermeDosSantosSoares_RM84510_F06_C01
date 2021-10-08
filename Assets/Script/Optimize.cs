@@ -41,9 +41,7 @@ public class Optimize : MonoBehaviour
                 QualitySettings.SetQualityLevel(5, true);
                 break;
 
-            default:
-                Debug.Log("Nao ha qualidade nesta tecla");
-                break;
+            
         }
 
     }
