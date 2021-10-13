@@ -5,7 +5,7 @@ using UnityEngine;
 public class DamageTrap : MonoBehaviour
 {
 
-    public static float trapDamage = 5f;
+    public static float trapDamage = 10f;
 
    
 }

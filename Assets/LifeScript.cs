@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifeScript : MonoBehaviour
 {
     
-    public static float cura = 10;
+    public static float cura = 15;
 
     private void OnTriggerEnter(Collider other)
     {
